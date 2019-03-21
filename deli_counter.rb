@@ -2,14 +2,18 @@
 katz_deli = []
 
 def line(katz_deli)
-  sentence_array = []
-  if katz_deli.size == []
-    "The line is currently empty."
-  elsif katz_deli.size >= 1
-      katz_deli.each_with_index(1) do |index, name|
-        sentence_array << "The line is currently: #{index}. #{name}"
+  current_string = "The line is currently"
+  if katz_deli.size == 0
+    puts current_string + " empty."
+  else
+    current_string += (":")
+    counter = 0
+    until counter == katz_deli.length
+      current_string += " #{counter + 1}. #{katz_deli[counter]}"
+      counter += 1
+    end
+    puts current_string
   end
-  sentence_array
 end
 
 
