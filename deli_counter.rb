@@ -1,6 +1,18 @@
 # Write your code here.
 katz_deli = []
 
+def line(katz_deli)
+  sentence_array = []
+  if katz_deli.size == []
+    "The line is currently empty."
+  elsif katz_deli.size >= 1
+      katz_deli.each_with_index(1) do |index, name|
+        sentence_array << "The line is currently: #{index}. #{name}"
+  end
+  sentence_array
+end
+
+
 def take_a_number(katz_deli, name)
   line_array = []
   katz_deli.each_with_index(1) do |name, index|
@@ -9,16 +21,6 @@ def take_a_number(katz_deli, name)
   line_array
 end
 
-def line
-  sentence_array = []
-  if katz_deli.size == 0
-    "The line is currently empty."
-  elsif katz_deli.size >= 1
-      katz_deli.each_with_index(1) do |index, name|
-        sentence_array << "The line is currently: #{index}. #{name}"
-  end
-  sentence_array
-end
 
 def now_serving(katz_deli)
   list_array = []
