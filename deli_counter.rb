@@ -14,12 +14,11 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   elsif katz_deli.size >= 1
-    sentence = "The line is currently: "
       katz_deli.each_with_index(1) do |index, name|
-        sentence_array << "#{index}. #{name}"
+        sentence_array << "The line is currently: #{index}. #{name}"
       end
   end
-  sentence + sentence_array
+  sentence_array
 end
 
 def now_serving(katz_deli)
