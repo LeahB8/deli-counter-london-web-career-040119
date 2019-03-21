@@ -17,12 +17,9 @@ def line(katz_deli)
 end
 
 
-def take_a_number(katz_deli, name)
-  line_array = []
-  katz_deli.each_with_index(1) do |name, index|
-    line_array << "Welcome, #{name}. You are number #{index} in line."
-  end
-  line_array
+def take_a_number(array, name)
+  array.push(name)
+  puts "Welcome, #{name}. You are number #{array.length} in line"
 end
 
 
