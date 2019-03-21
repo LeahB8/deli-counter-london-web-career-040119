@@ -17,9 +17,7 @@ def line
         sentence_array
   elsif katz_deli.size == 0
     puts "The line is currently empty."
-      end
   end
-  
 end
 
 def now_serving(katz_deli)
