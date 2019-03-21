@@ -29,4 +29,5 @@ def now_serving(katz_deli)
         list_array << "#{index}. #{name}"
   end
   katz_deli.delete[0]
+  list_array
 end
