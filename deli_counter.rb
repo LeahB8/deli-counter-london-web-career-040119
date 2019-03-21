@@ -14,7 +14,10 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   elsif katz_deli.size >= 1
-    puts "The line is currently: #{index+1}. #{name}"
+    sentence = "The line is currently: "
+    sentence_array << "some string"
+    
+     #{index+1}. #{name}"
   end
 end
 
