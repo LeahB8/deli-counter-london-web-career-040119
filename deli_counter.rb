@@ -3,7 +3,7 @@ katz_deli = []
 
 def line(katz_deli)
   current_string = "The line is currently"
-  if katz_deli.size == 0
+  if katz_deli.length == 0
     puts current_string + " empty."
   else
     current_string += (":")
@@ -24,7 +24,7 @@ end
 
 
 def now_serving(katz_deli)
-  if katz_deli.size == 0
+  if katz_deli.length == 0
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{katz_deli[0]}."
