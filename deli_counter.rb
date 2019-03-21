@@ -15,7 +15,7 @@ def line(katz_deli)
   elsif katz_deli.size >= 1
     sentence = "The line is currently: "
     katz_deli.each_with_index(1) do |index, name|
-    sentence_array << "{index}. #{name}"
+    sentence_array << "#{index}. #{name}"
   end
   sentence + sentence_array
 end
