@@ -16,7 +16,6 @@ def line
         sentence_array << "The line is currently: #{index}. #{name}"
   elsif katz_deli.size == 0
     "The line is currently empty."
-      end
   end
   sentence_array
 end
