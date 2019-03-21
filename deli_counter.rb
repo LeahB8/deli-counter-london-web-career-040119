@@ -10,6 +10,7 @@ def take_a_number(katz_deli, name)
 end
 
 def line(katz_deli)
+  sentence_array = []
   if katz_deli.size == 0
     puts "The line is currently empty."
   elsif katz_deli.size >= 1
