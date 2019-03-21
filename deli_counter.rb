@@ -25,10 +25,8 @@ def now_serving(katz_deli)
   if katz_deli.size == 0
     puts "There is nobody waiting to be served!"
   elsif katz_deli.size >= 1
-    puts "#{index+1}. #{name}"
-    
      katz_deli.each_with_index(1) do |index, name|
-        list_array << #{index}. #{name}"
+        list_array << "#{index}. #{name}"
   end
   katz_deli.delete[0]
 end
